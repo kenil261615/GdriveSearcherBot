@@ -1,5 +1,4 @@
 build:
   docker:
     web: Dockerfile
-CMD:
-  web: python main.py
+CMD: python main.py
