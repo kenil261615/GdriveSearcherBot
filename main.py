@@ -47,7 +47,7 @@ async def search(_, message):
     for count in range(min(i, results)):
         if data[count]['type'] == "file":
             text += f"""
-📄  [{data[count]['name']}
+🎬  [__{data[count]['name']}__
 **Size:** __{data[count]['size']}__
 **[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
 
@@ -98,7 +98,7 @@ async def previous_callbacc(_, CallbackQuery):
         try:
             if data[count]['type'] == "file":
                 text += f"""
-📄  [{data[count]['name']}
+🎬  [__{data[count]['name']}__
 **Size:** __{data[count]['size']}__
 **[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
 
@@ -140,7 +140,7 @@ async def next_callbacc(_, CallbackQuery):
         try:
             if data[count]['type'] == "file":
                 text += f"""
-📄  [{data[count]['name']}
+🎬  [__{data[count]['name']}__
 **Size:** __{data[count]['size']}__
 **[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
 
