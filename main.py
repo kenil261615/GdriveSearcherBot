@@ -50,8 +50,7 @@ async def search(_, message):
 🎬  **{data[count]['name']}**
 
 **Size:** __{data[count]['size']}__
-**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n
-**❤️Love From Streamflix❤️**"""        
+**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""     
 
         else:
             text += f"""
@@ -103,8 +102,7 @@ async def previous_callbacc(_, CallbackQuery):
 🎬  **{data[count]['name']}**
 
 **Size:** __{data[count]['size']}__
-**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n
-**❤️Love From Streamflix❤️"""
+**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
             else:
                 text += f"""
 📂  __{data[count]['name']}__
@@ -146,8 +144,7 @@ async def next_callbacc(_, CallbackQuery):
 🎬  **{data[count]['name']}**
 
 **Size:** __{data[count]['size']}__
-**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n
-**❤️Love From Streamflix❤️**"""
+**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
             else:
                 text += f"""
 📂  __{data[count]['name']}__
