@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntumain.py
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
@@ -13,5 +13,7 @@ RUN pip3 install --no-cache-dir -U -r requirements.txt
 #Copying All Source
 COPY . .
 
+RUN chmod 777 main.py
+
 #Starting Bot
-CMD pthon3 main.py
+CMD python3 main.py
